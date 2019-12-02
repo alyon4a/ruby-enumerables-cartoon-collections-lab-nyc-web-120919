@@ -10,6 +10,9 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.reduce
   {|memo, call| 
   do 
+    puts "!!!!!!!"
+    puts memo 
+    puts call
     call.length > 4 ? memo = true : (memo || false) 
   end
 end
