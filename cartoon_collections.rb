@@ -13,6 +13,7 @@ def long_planeteer_calls(planeteer_calls)
     puts memo 
     puts call
     call.length > 4 ? memo = true : (memo || false) 
+    memo
   end
 end
 
