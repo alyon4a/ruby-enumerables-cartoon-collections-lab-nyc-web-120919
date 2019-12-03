@@ -12,8 +12,8 @@ def long_planeteer_calls(planeteer_calls)
     puts "!!!!!!!"
     puts memo 
     puts call
-    memo = call.length > 4 ? true : (false || memo) 
-    
+    memo = call.length > 4 ? true : memo 
+    memo = false if memo == {}
   end
 end
 
