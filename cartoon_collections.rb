@@ -7,9 +7,9 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.reduce({}) do |memo, call| 
+  planeteer_calls.reduce({}) do |memo = false, call| 
     memo = call.length > 4 ? true : memo 
-    memo = false if memo == {}
+   # memo = false if memo == {}
     memo
   end
 end
