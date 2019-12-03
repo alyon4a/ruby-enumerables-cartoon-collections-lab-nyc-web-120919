@@ -8,10 +8,6 @@ end
 
 def long_planeteer_calls(planeteer_calls)
   planeteer_calls.reduce({}) do |memo, call| 
-  
-    puts "!!!!!!!"
-    puts memo 
-    puts call
     memo = call.length > 4 ? true : memo 
     memo = false if memo == {}
     memo
