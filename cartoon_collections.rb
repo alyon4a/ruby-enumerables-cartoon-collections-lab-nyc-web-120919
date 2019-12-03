@@ -14,6 +14,6 @@ end
 def find_the_cheese(look_for_cheese_here)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  look_for_cheese_here.reduce() { |memo, is_this_cheese|
-  cheese_types.include?(is_this_cheese) ? is_this_cheese : memo }
+  look_for_cheese_here.detect() { |is_this_cheese|
+  cheese_types.include?(is_this_cheese) ? is_this_cheese : nil }
 end
