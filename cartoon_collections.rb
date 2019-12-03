@@ -12,7 +12,6 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_the_cheese(look_for_cheese_here)
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   look_for_cheese_here.detect() { |is_this_cheese|
   cheese_types.include?(is_this_cheese) }
